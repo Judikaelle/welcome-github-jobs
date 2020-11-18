@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import { paramsState } from '../atoms/jobs'
 import { useRecoilState } from 'recoil'
@@ -9,6 +10,7 @@ import { Checkbox } from '@welcome-ui/checkbox'
 
 const JobSearch = () => {
   const [params, setParams] = useRecoilState(paramsState)
+  const [checkbox, setCheckbox] = useState(false)
 
   function handleChange (e) {
     const name = e.target.name
@@ -21,9 +23,14 @@ const JobSearch = () => {
 
   return (
     <div>
-      <Form light>
+      <Form>
         <Label>Full-time</Label>
-        <Checkbox component={Checkbox} checked={params.full_time} name='full_time' label='Full-time' onChange={handleChange} />
+        <Checkbox
+          component={Checkbox} checked={checkbox} name='full_time' label='Full-time' onChange={(e) => {
+            setCheckbox(!checkbox)
+            handleChange(e)
+          }}
+        />
         <WrappedInput
           component={InputText}
           isClearable

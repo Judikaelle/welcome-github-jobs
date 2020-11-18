@@ -41,7 +41,7 @@ place-items: center;
 padding: 10rem;
 `
 const WrappedText = styled(Text)`
-margin-bottom: 1rem;
+margin-bottom: 3rem;
 `
 
 export default App
