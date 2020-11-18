@@ -14,6 +14,7 @@ const JobList = () => {
   const params = useRecoilValue(paramsState)
 
   useEffect(() => {
+    const cancelToken = axios.CancelToken.source()
     axios.get('https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json', {
       params: { ...params }
     })
@@ -24,6 +25,10 @@ const JobList = () => {
       .catch(err => {
         console.log(err)
       })
+
+    return () => {
+      cancelToken.cancel()
+    }
   }, [params, setJobs])
 
   return (
