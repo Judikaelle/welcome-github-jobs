@@ -14,7 +14,7 @@ const JobList = () => {
   const params = useRecoilValue(paramsState)
 
   useEffect(() => {
-    axios.get('/positions.json', {
+    axios.get('https://jobs.github.com/positions.json', {
       params: { ...params }
     })
       .then(res => {
