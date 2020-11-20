@@ -2174,10 +2174,24 @@
   dependencies:
     "@welcome-ui/icon" "^2.0.2"
 
+"@welcome-ui/icons.left@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.left/-/icons.left-2.0.2.tgz#988ca347ae2cabaf1db4421f52bfb25705cec4b2"
+  integrity sha512-io4YwJcYfaegEv0MLaSAyO6KJup3khEBm5EHbG+AZZFq/5X01GLosMSVjS2IV2kxR/khP4TiFGmUgY6bJxVXvw==
+  dependencies:
+    "@welcome-ui/icon" "^2.0.2"
+
 "@welcome-ui/icons.lock@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@welcome-ui/icons.lock/-/icons.lock-2.0.2.tgz#5f00d21b2f993e19b999403d37a756cabd2ea8c4"
   integrity sha512-jrAPxjCsEEqDsE2ux/Q5jWzfQ/39qwD2Pe/iXB/aF1Aec/3tHOsPY7Y8hmGtMk07Cek2ZpsoSbSMqjYoD6Ckmg==
+  dependencies:
+    "@welcome-ui/icon" "^2.0.2"
+
+"@welcome-ui/icons.right@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/icons.right/-/icons.right-2.0.2.tgz#b5a367dbf1bd62f71c78ec2f5f8886ebf48934aa"
+  integrity sha512-5Th71TGs8cth7P0t/JcUcQdlWShTlWNTIq1C7TtjLNq3cMzsG7ZvvuIb2lKgaQXO7oiPeyHl1yFajWyJOt8amQ==
   dependencies:
     "@welcome-ui/icon" "^2.0.2"
 
@@ -2209,6 +2223,17 @@
     "@welcome-ui/box" "^2.0.2"
     "@welcome-ui/shape" "^2.0.2"
     "@welcome-ui/system" "^2.0.2"
+
+"@welcome-ui/pagination@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/pagination/-/pagination-2.0.2.tgz#f959df6acaf7ed3be64d30fa5cb9c56d64378fe1"
+  integrity sha512-vYoMUOmJwwVsEPIDZbQ/KJer42UxTncOTVrZhlv+3sPfS5CcuKNuCKO14X8ruJo13KXYuty6TwVx9bsz050/Hg==
+  dependencies:
+    "@welcome-ui/icons.left" "^2.0.2"
+    "@welcome-ui/icons.right" "^2.0.2"
+    "@welcome-ui/system" "^2.0.2"
+    "@welcome-ui/utils" "^2.0.2"
+    reakit "^1.1.1"
 
 "@welcome-ui/search@^2.5.2":
   version "2.5.2"
