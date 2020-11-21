@@ -7,7 +7,7 @@ import { Text } from '@welcome-ui/text'
 import { Badge } from '@welcome-ui/badge'
 
 const JobListItem = ({ job }) => {
-	const { title, type, location, created_at, description, company, company_logo } = job
+	const { type, location, created_at, description, company, company_logo } = job
 
 	return (
 		<Content>

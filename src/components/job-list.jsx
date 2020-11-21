@@ -60,18 +60,18 @@ const JobList = () => {
 			) :
 				jobs.length > 0 ? (
 					<div style={{ width: '100%' }}>
-						{(hasNextPage && page === 1) ? (
-							<Pagination
-								aria-label='Pagination'
-								page={page}
-								onChange={setPage}
-								pageCount={hasNextPage ? page + 1 : page}
-								rangeDisplay={50}
-							/>
-
+						{(!hasNextPage && page === 1) ? (
+							''
 						) : (
-								<div></div>
-							)}
+								<Pagination
+									aria-label='Pagination'
+									page={page}
+									onChange={setPage}
+									pageCount={hasNextPage ? page + 1 : page}
+									rangeDisplay={50}
+								/>
+							)
+						}
 						<WrappedTable>
 							<Table.Thead>
 								<Table.Tr>
@@ -100,18 +100,18 @@ const JobList = () => {
 								))}
 							</Table.Tbody>
 						</WrappedTable>
-						{(hasNextPage && page === 1) ? (
-							<Pagination
-								aria-label='Pagination'
-								page={page}
-								onChange={setPage}
-								pageCount={hasNextPage ? page + 1 : page}
-								rangeDisplay={50}
-							/>
-
+						{(!hasNextPage && page === 1) ? (
+							''
 						) : (
-								<div></div>
-							)}
+								<Pagination
+									aria-label='Pagination'
+									page={page}
+									onChange={setPage}
+									pageCount={hasNextPage ? page + 1 : page}
+									rangeDisplay={50}
+								/>
+							)
+						}
 					</div>
 				) : (
 						<h1>No Results</h1>
